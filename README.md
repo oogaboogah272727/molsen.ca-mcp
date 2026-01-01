@@ -5,13 +5,13 @@ MCP server for accessing [molsen.ca](https://molsen.ca) essay content. Exposes M
 ## Installation
 
 ```bash
-npm install -g molsen.ca-mcp
+npm install -g @molsen.ca/mcp
 ```
 
 Or run directly with npx:
 
 ```bash
-npx molsen.ca-mcp
+npx @molsen.ca/mcp
 ```
 
 ## Usage with Claude Desktop
@@ -23,7 +23,7 @@ Add to your Claude Desktop configuration (`~/.config/claude/claude_desktop_confi
   "mcpServers": {
     "molsen-essays": {
       "command": "npx",
-      "args": ["-y", "molsen.ca-mcp"]
+      "args": ["-y", "@molsen.ca/mcp"]
     }
   }
 }

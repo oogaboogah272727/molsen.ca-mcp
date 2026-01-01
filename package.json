@@ -1,11 +1,11 @@
 {
-  "name": "molsen.ca-mcp",
+  "name": "@molsen.ca/mcp",
   "version": "1.0.0",
   "description": "MCP server for accessing molsen.ca essay content",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "molsen.ca-mcp": "dist/index.js"
+    "molsen-mcp": "dist/index.js"
   },
   "scripts": {
     "build": "tsc",

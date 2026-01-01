@@ -6,4 +6,4 @@ description = "Access Mike Olsen's essays on AI governance and professional prac
 
 [mcp]
 command = "npx"
-args = ["-y", "molsen.ca-mcp"]
+args = ["-y", "@molsen.ca/mcp"]
