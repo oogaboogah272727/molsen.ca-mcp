@@ -4,6 +4,16 @@ MCP server for accessing [molsen.ca](https://molsen.ca) essay content. Exposes M
 
 ## Installation
 
+### Standalone Binary (no Node required)
+
+Download the latest binary for your platform from [GitHub Releases](https://github.com/oogaboogah272727/molsen.ca-mcp/releases):
+
+- **Windows**: `molsen-mcp-vX.X.X-win.exe`
+- **macOS**: `molsen-mcp-vX.X.X-macos`
+- **Linux**: `molsen-mcp-vX.X.X-linux`
+
+### Via npm
+
 ```bash
 npm install -g @molsen.ca/mcp
 ```
@@ -16,7 +26,23 @@ npx @molsen.ca/mcp
 
 ## Usage with Claude Desktop
 
-Add to your Claude Desktop configuration (`~/.config/claude/claude_desktop_config.json`):
+### With standalone binary (Windows example)
+
+Add to your Claude Desktop configuration (`%APPDATA%\Claude\claude_desktop_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "molsen-essays": {
+      "command": "C:\\path\\to\\molsen-mcp.exe"
+    }
+  }
+}
+```
+
+### With npx
+
+Add to your Claude Desktop configuration:
 
 ```json
 {

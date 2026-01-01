@@ -11,7 +11,12 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "tsx src/index.ts",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "build:binaries": "pkg dist/index.js --targets node18-win-x64,node18-macos-x64,node18-linux-x64 --output dist/molsen-mcp"
+  },
+  "pkg": {
+    "targets": ["node18-win-x64", "node18-macos-x64", "node18-linux-x64"],
+    "outputPath": "dist"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
@@ -19,6 +24,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
+    "pkg": "^5.8.1",
     "tsx": "^4.0.0",
     "typescript": "^5.0.0"
   },
