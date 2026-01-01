@@ -1,0 +1,9 @@
+# Claude Code skill for accessing molsen.ca essays
+# Copy this file to ~/.claude/skills/ to use with Claude Code
+
+name = "molsen"
+description = "Access Mike Olsen's essays on AI governance and professional practice"
+
+[mcp]
+command = "npx"
+args = ["-y", "molsen.ca-mcp"]

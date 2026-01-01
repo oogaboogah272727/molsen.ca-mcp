@@ -1,0 +1,43 @@
+{
+  "name": "molsen.ca-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for accessing molsen.ca essay content",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "molsen.ca-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "mcp",
+    "ai",
+    "essays",
+    "molsen"
+  ],
+  "author": "Mike Olsen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oogaboogah272727/molsen.ca-mcp"
+  }
+}
