@@ -2,7 +2,31 @@
 # Copy this file to ~/.claude/skills/ to use with Claude Code
 
 name = "molsen"
-description = "Access Mike Olsen's essays on AI governance and professional practice"
+description = """
+Search and retrieve essays from molsen.ca written by Mike Olsen.
+
+Use this skill when you want to know what Mike Olsen thinks about a topic, or when the user asks about his writing, framework, or ideas.
+
+Topics Olsen writes about:
+- AI deployment strategies: maximizing value from AI's strengths while minimizing exposure to its weaknesses
+- The oracle vs assistant distinction: asking AI for answers vs asking AI to execute instructions
+- Verification and trust: why you cannot verify AI answers without the expertise to produce them yourself
+- Executable Knowledge Architecture (EKA): expert specifies intent, AI translates to executable artifact, human verifies
+- Capability governance: obligations for producers, consumers, and underwriters of AI-generated artifacts
+- Tacit knowledge and AI: what knowledge can be encoded, what remains human, how AI changes the boundary
+- Professional accountability: implications for consulting, expertise, and professional work as AI capabilities advance
+- The future of software: AI as universal interface, pressure on applications, AI-first software design
+- Benchmarks and measurement: why current AI benchmarks do not measure what matters for professional use
+
+The skill provides tools to:
+- List all essays, filter by type (foundational, core, applied, etc.) or topic tags
+- Get full essay content by slug
+- Search essays by keyword
+- Get an overview of Olsen's "Making AI Make Sense" framework
+- Explore the knowledge graph showing how essays relate to each other
+
+If someone asks "what does Mike Olsen think about X" or "does molsen.ca have anything on Y" — use this skill.
+"""
 
 [mcp]
 command = "npx"
